@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- REMIX ICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Weather app</title>
+</head>
+<body>
+
+<div class="home-grid">
+
+    <!-- HEADER START-->
+    <header class="header">
+        <form class="header__form">
+            <input type="text" class="header__input" placeholder="Search for cities">
+            <i class="icon header__icon fa-solid fa-magnifying-glass"></i>
+        </form>
+    </header>
+    <!-- HEADER END-->
+
+    <!-- SIDEBAR START-->
+    <aside class="sidebar">
+            <nav class="sidebar__nav">
+                <a href="#" class="sidebar__logo">
+                    <img src="/img/Logo.webp" alt="Logo">
+                </a>
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <a href="/index.html" class="sidebar__link">
+                            <i class="icon sidebar__icon fa-solid fa-cloud-sun-rain"></i>Weather
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="/html/cities.html" class="sidebar__link">
+                            <i class="icon sidebar__icon fa-solid fa-list"></i>Cities
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="/html/map.html" class="sidebar__link">
+                            <i class="icon sidebar__icon fa-solid fa-map"></i>Map
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="/html/settings.html" class="sidebar__link">
+                            <i class="icon sidebar__icon fa-solid fa-sliders"></i>Settings
+                        </a>
+                    </li>
+                    <li class="sidebar__item sidebar__dark-mode">
+                        <input type="checkbox" id="darkmode-toggle" class="sidebar__toggle">
+                        <label for="darkmode-toggle" class="sidebar__label"></label>
+                    </li>
+                </ul>
+            </nav>
+    </aside>
+    <!-- SIDEBAR END-->
+
+
+    <section class="main__top">
+        <img src="/img/sunny.webp" class="main__top-img">
+        <div class="main__top-content">
+            <h2 class="main__top-city">New York</h2>
+            <h1 class="main__top-temperature">31°</h1>
+            <p class="main__top-chance">Chance of rain <span class="pop-value">0%</span></p>
+        </div>
+    </section>
+
+    <section class="main__content">
+            <h3 class="page-title">TODAY'S FORECAST</h3>
+
+            <div class="swiper">
+                <div class="main__content-list swiper-wrapper">
+                    <!-- list 1 -->
+                    <div class="main__content-item swiper-slide">
+                        <time class="main__content-hour">00:00 AM</time>
+                        <img src="/img/sunny.webp" class="main__content-img">
+                        <h4 class="main__content-temperature">25°</h4>
+                    </div>
+                    <!-- list 2 -->
+                    <div class="main__content-item swiper-slide">
+                        <time class="main__content-hour">03:00 AM</time>
+                        <img src="/img/sunny.webp" class="main__content-img">
+                        <h4 class="main__content-temperature">25°</h4>
+                    </div>
+                    <!-- list 3 -->
+                    <div class="main__content-item swiper-slide">
+                        <time class="main__content-hour">06:00 AM</time>
+                        <img src="/img/sunny.webp" class="main__content-img">
+                        <h4 class="main__content-temperature">25°</h4>
+                    </div>
+                    <!-- list 4 -->
+                    <div class="main__content-item swiper-slide">
+                        <time class="main__content-hour">09:00 AM</time>
+                        <img src="/img/sunny.webp" class="main__content-img">
+                        <h4 class="main__content-temperature">25°</h4>
+                    </div>
+                    <!-- list 5 -->
+                    <div class="main__content-item swiper-slide">
+                        <time class="main__content-hour">12:00 PM</time>
+                        <img src="/img/sunny.webp" class="main__content-img">
+                        <h4 class="main__content-temperature">25°</h4>
+                    </div>
+                    <!-- list 6 -->
+                    <div class="main__content-item swiper-slide">
+                        <time class="main__content-hour">15:00 PM</time>
+                        <img src="/img/sunny.webp" class="main__content-img">
+                        <h4 class="main__content-temperature">25°</h4>
+                    </div>
+                    <!-- list 7 -->
+                    <div class="main__content-item swiper-slide">
+                        <time class="main__content-hour">18:00 PM</time>
+                        <img src="/img/sunny.webp" class="main__content-img">
+                        <h4 class="main__content-temperature">25°</h4>
+                    </div>
+                    <!-- list 8 -->
+                    <div class="main__content-item swiper-slide">
+                        <time class="main__content-hour">21:00 PM</time>
+                        <img src="/img/sunny.webp" class="main__content-img">
+                        <h4 class="main__content-temperature">25°</h4>
+                    </div>
+                </div>
+            </div>
+            
+    </section>
+
+    <section class="main__bottom">
+            <div class="main__bottom-container">
+                <h3 class="page-title">AIR CONDITIONS</h3>
+                <button class="btn btn--desktop">SEE MORE</button>
+                <button class="btn btn--mobile">SEE MORE</button>
+            </div>
+
+            <ul class="main__bottom-list">
+                <li class="main__bottom-item">
+                    <div class="main__bottom-info">
+                        <i class="icon icon--air fa-solid fa-temperature-half"></i>
+                        <h4 class="main__bottom-name">REAL FEEL</h4>
+                    </div>
+                    <h4 class="main__bottom-temperature" data-type="real-feel">30°</h4>
+                </li>
+                <li class="main__bottom-item">
+                    <div class="main__bottom-info">
+                        <i class="icon icon--air fa-solid fa-wind"></i>
+                        <h4 class="main__bottom-name">WIND</h4>
+                    </div>
+                    <h4 class="main__bottom-temperature" data-type="wind">0.2 km/h</h4>
+                </li>
+                <li class="main__bottom-item">
+                    <div class="main__bottom-info">
+                        <i class="icon icon--air fa-solid fa-droplet"></i>
+                        <h4 class="main__bottom-name">CHANCE OF RAIN</h4>
+                    </div>
+                    <h4 class="main__bottom-temperature" data-type="rain">0%</h4>
+                </li>
+                <li class="main__bottom-item">
+                    <div class="main__bottom-info">
+                        <i class="icon icon--air fa-solid fa-sun"></i>
+                        <h4 class="main__bottom-name">UV INDEX</h4>
+                    </div>
+                    <h4 class="main__bottom-temperature">N/n</h4>
+                </li>
+                <li class="main__bottom-item hidden">
+                    <div class="main__bottom-info">
+                        <i class="icon icon--air fa-solid fa-shower"></i>
+                        <h4 class="main__bottom-name">HUMIDITY</h4>
+                    </div>
+                    <h4 class="main__bottom-temperature" data-type="humidity">56%</h4>
+                </li>
+                <li class="main__bottom-item hidden">
+                    <div class="main__bottom-info">
+                        <i class="icon icon--air fa-solid fa-eye"></i>
+                        <h4 class="main__bottom-name">VISIBILITY</h4>
+                    </div>
+                    <h4 class="main__bottom-temperature" data-type="visibility">12 km</h4>
+                </li>
+                <li class="main__bottom-item hidden">
+                    <div class="main__bottom-info">
+                        <i class="icon icon--air fas fa-tachometer-alt"></i>
+                        <h4 class="main__bottom-name">PRESSURE</h4>
+                    </div>
+                    <h4 class="main__bottom-temperature" data-type="pressure">1008 hPa</h4>
+                </li>
+                <li class="main__bottom-item hidden">
+                    <div class="main__bottom-info">
+                        <i class="icon icon--air fa-solid fa-cloud-sun"></i>
+                        <h4 class="main__bottom-name">SUNSET</h4>
+                    </div>
+                    <h4 class="main__bottom-temperature" data-type="sunset">20:58</h4>
+                </li>
+            </ul>
+    </section>
+
+
+    <!-- FORECAST START-->
+    <aside class="forecast">
+        <h3 class="page-title">5 Day Forecast</h3>
+        <ul class="forecast__list">
+            <li class="forecast__item">
+                <h4 class="forecast__day">Today</h4>
+                <div class="forecast__weather">
+                    <img src="/img/sunny.webp" alt="Sunny" class="forecast__icon"> Sunny
+                </div>
+                <h4 class="forecast__range">30/20</h4>
+            </li>
+            <li class="forecast__item">
+                <h4 class="forecast__day">Wed</h4>
+                <div class="forecast__weather">
+                    <img src="/img/sunny.webp" alt="Sunny" class="forecast__icon"> Sunny
+                </div>
+                <h4 class="forecast__range">30/20</h4>
+            </li>
+            <li class="forecast__item">
+                <h4 class="forecast__day">Thu</h4>
+                <div class="forecast__weather">
+                    <img src="/img/sunny.webp" alt="Sunny" class="forecast__icon"> Sunny
+                </div>
+                <h4 class="forecast__range">30/20</h4>
+            </li>
+            <li class="forecast__item">
+                <h4 class="forecast__day">Fri</h4>
+                <div class="forecast__weather">
+                    <img src="/img/sunny.webp" alt="Sunny" class="forecast__icon"> Sunny
+                </div>
+                <h4 class="forecast__range">30/20</h4>
+            </li>
+            <li class="forecast__item">
+                <h4 class="forecast__day">Sat</h4>
+                <div class="forecast__weather">
+                    <img src="/img/sunny.webp" alt="Sunny" class="forecast__icon"> Sunny
+                </div>
+                <h4 class="forecast__range">30/20</h4>
+            </li>
+        </ul>
+    </aside>
+    <!-- FORECAST END-->
+
+</div>
+
+<!-- SWIPER JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- MAIN JS -->
+ <script src="/js/sidebar.js"></script>
+ <script src="/js/swiper-config.js"></script>
+ <script src="/js/weather.js"></script>
+</body>
+</html>

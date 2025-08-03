@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- REMIX ICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- LEAFLET -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <!-- SWIPER CSS -->
+    <title>Weather app</title>
+</head>
+<body>
+
+    <div class="map-grid">
+        <!-- SIDEBAR START-->
+        <aside class="sidebar">
+                <nav class="sidebar__nav">
+                    <a href="#" class="sidebar__logo">
+                        <img src="/img/Logo.webp" alt="Logo">
+                    </a>
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <a href="/index.html" class="sidebar__link">
+                                <i class="icon sidebar__icon fa-solid fa-cloud-sun-rain"></i>Weather
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="/html/cities.html" class="sidebar__link">
+                                <i class="icon sidebar__icon fa-solid fa-list"></i>Cities
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="/html/map.html" class="sidebar__link">
+                                <i class="icon sidebar__icon fa-solid fa-map"></i>Map
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="/html/settings.html" class="sidebar__link">
+                                <i class="icon sidebar__icon fa-solid fa-sliders"></i>Settings
+                            </a>
+                        </li>
+                        <li class="sidebar__item sidebar__dark-mode">
+                            <input type="checkbox" id="darkmode-toggle" class="sidebar__toggle">
+                            <label for="darkmode-toggle" class="sidebar__label"></label>
+                        </li>
+                    </ul>
+                </nav>
+        </aside>
+        <!-- SIDEBAR END-->
+
+        <div id="map"></div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/js/map.js"></script>
+    <script src="/js/sidebar.js"></script>
+</body>
+</html>

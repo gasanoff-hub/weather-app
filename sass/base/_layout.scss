@@ -1,0 +1,113 @@
+@use "../abstracts/index" as a;
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5rem auto auto auto;
+  grid-template-areas:
+    "header header"
+    "top top"
+    "content forecast"
+    "bottom forecast";
+  padding: 1rem 1rem 1rem 13rem;
+  height: 100vh;
+  gap: 3rem;
+  transition: grid-template-rows 0.3s ease, grid-template-columns 0.3s ease;
+
+  @include a.respond(xl) {
+    grid-template-rows: 5rem auto 23rem auto;
+    grid-template-areas:
+      "header header"
+      "top top"
+      "content forecast"
+      "bottom forecast";
+  }
+
+  @include a.respond(md) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "top"
+      "content"
+      "bottom"
+      "forecast";
+    height: 80vh;
+    gap: 2rem;
+    padding: 1rem 1rem 4rem;
+    overflow-y: auto;
+  }
+}
+
+.home-grid.alt-layout {
+  grid-template-columns: 2fr 1.3fr;
+  grid-template-areas:
+    "header ."
+    "top content"
+    "bottom forecast"
+    "bottom forecast";
+  transition: grid-template-rows 0.3s ease, grid-template-columns 0.3s ease;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "units"
+    "notification"
+    "general";
+  height: 100vh;
+  gap: 3rem;
+  padding: 1rem 1rem 1rem 13rem;
+
+  @include a.respond(md) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+    "units"
+    "notification"
+    "general";
+    height: 80vh;
+    padding: 1rem 1rem 4rem;
+    overflow-y: auto;
+  }
+}
+
+.map-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "map";
+  padding: 1rem 1rem 1rem 13rem;
+  height: 100vh;
+  gap: 3rem;
+
+  @include a.respond(md) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "map";
+    height: 80vh;
+    padding: 1rem 1rem 4rem;
+    overflow-y: auto;
+  }
+}
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "coming-soon";
+  padding: 1rem 1rem 1rem 13rem;
+  height: 100vh;
+  gap: 3rem;
+
+  @include a.respond(md) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "coming-soon";
+    height: 80vh;
+    padding: 1rem 1rem 4rem;
+    overflow-y: auto;
+  }
+}

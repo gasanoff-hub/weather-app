@@ -1,0 +1,138 @@
+@use "../abstracts/index" as a;
+
+.forecast {
+  grid-area: forecast;
+  @include a.flex($direction: column);
+  gap: 2rem;
+  background: var(--bg-section);
+  border-radius: 3rem;
+  padding: 3rem;
+
+  &__list {
+    @include a.flex($justify-content: space-between, $direction: column);
+    height: 100%;
+  }
+
+  &__item {
+    @include a.flex(space-between, center);
+    background: var(--bg-body);
+    border-radius: 2rem;
+    padding: 2rem;
+
+    &.expanded {
+      height: 7rem;
+    }
+  }
+
+  &__day {
+    display: inline-block;
+    width: 4.2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--text-light-gray);
+  }
+
+  &__weather {
+    @include a.flex(flex-start, center);
+    gap: 2rem;
+    font-size: 1.7rem;
+    width: 11rem;
+    font-weight: 600;
+    color: var(--text-light-gray);
+  }
+
+  &__range {
+    width: 4.3rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--text-light-gray);
+  }
+
+  &__icon {
+    width: 5rem;
+  }
+
+  @include a.respond(md) {
+    margin: 0;
+
+    &__list {
+      gap: 2rem;
+    }
+  }
+
+  @include a.respond(xl) {
+    &__item {
+      height: 7rem;
+      &.expanded {
+        height: 6rem;
+      }
+    }
+
+    &__day {
+      font-size: 1.5rem;
+    }
+
+    &__icon {
+      width: 4rem;
+    }
+
+    &__weather {
+      gap: 1rem;
+      font-size: 1.5rem;
+    }
+
+    &__range {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include a.respond(xxl) {
+    &__item {
+      height: 7rem;
+      &.expanded {
+        height: 6rem;
+      }
+    }
+
+    &__day {
+      font-size: 1.5rem;
+    }
+
+    &__icon {
+      width: 4rem;
+    }
+
+    &__weather {
+      font-size: 1.5rem;
+    }
+
+    &__range {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include a.respond(xxxl) {
+    &__item {
+      height: 7rem;
+      &.expanded {
+        height: 6rem;
+      }
+    }
+
+    &__day {
+      font-size: 1.5rem;
+    }
+
+    &__icon {
+      width: 4rem;
+    }
+
+    &__weather {
+      font-size: 1.5rem;
+    }
+
+    &__range {
+      font-size: 1.5rem;
+    }
+  }
+}

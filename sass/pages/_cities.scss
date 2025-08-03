@@ -1,0 +1,13 @@
+@use '../abstracts/mixins' as a;
+@use '../base/typography';
+
+.coming-soon {
+    grid-area: coming-soon;
+    &__title {
+        @include a.flex(center, center);
+        height: 100%;
+        font-size: 4rem;
+        font-weight: 700;
+        color: var(--text-white);
+    }
+}

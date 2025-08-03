@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- REMIX ICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- SWIPER CSS -->
+    <title>Weather app</title>
+</head>
+<body>
+
+    <div class="settings-grid">
+        
+        <!-- SIDEBAR START-->
+        <aside class="sidebar">
+            <nav class="sidebar__nav">
+                <a href="#" class="sidebar__logo">
+                    <img src="/img/Logo.webp" alt="Logo">
+                </a>
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <a href="/index.html" class="sidebar__link">
+                            <i class="icon sidebar__icon fa-solid fa-cloud-sun-rain"></i>Weather
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="/html/cities.html" class="sidebar__link">
+                            <i class="icon sidebar__icon fa-solid fa-list"></i>Cities
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="/html/map.html" class="sidebar__link">
+                            <i class="icon sidebar__icon fa-solid fa-map"></i>Map
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="/html/settings.html" class="sidebar__link">
+                            <i class="icon sidebar__icon fa-solid fa-sliders"></i>Settings
+                        </a>
+                    </li>
+                    <li class="sidebar__item sidebar__dark-mode">
+                        <input type="checkbox" id="darkmode-toggle" class="sidebar__toggle">
+                        <label for="darkmode-toggle" class="sidebar__label"></label>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- SIDEBAR END-->
+
+        <section class="settings__units">
+            <div class="settings__unit-group temperature">
+                <h4 class="settings__units-title">TEMPERATURE</h4>
+                <div class="settings__units-option">
+                    <span class="settings__option settings__option--active">Celsius</span>
+                    <span class="settings__option">Fahrenheit</span>
+                </div>
+            </div>
+            <div class="settings__unit-group wind-speed">
+                <h4 class="settings__units-title">WIND SPEED</h4>
+                <div class="settings__units-option">
+                    <span class="settings__option settings__option--active">km/h</span>
+                    <span class="settings__option">m/s</span>
+                    <span class="settings__option">Knots</span>
+                </div>
+            </div>
+            <div class="settings__unit-group pressure">
+                <h4 class="settings__units-title">PRESSURE</h4>
+                <div class="settings__units-option">
+                    <span class="settings__option settings__option--active">hPa</span>
+                    <span class="settings__option">Inches</span>
+                    <span class="settings__option">kPa</span>
+                    <span class="settings__option">mm</span>
+                </div>
+            </div>
+            <div class="settings__unit-group precipitation">
+                <h4 class="settings__units-title">PRECIPITATION</h4>
+                <div class="settings__units-option">
+                    <span class="settings__option">Milimeters</span>
+                    <span class="settings__option settings__option--active">Inches</span>
+                </div>
+            </div>
+            <div class="settings__unit-group distance">
+                <h4 class="settings__units-title">DISTANCE</h4>
+                <div class="settings__units-option">
+                    <span class="settings__option settings__option--active">Kilometre</span>
+                    <span class="settings__option">Miles</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="settings__notification">
+            <div class="settings__notification-card">
+                <div class="settings__notification-text">
+                    <h4 class="settings__notification-heading">Notifications</h4>
+                    <p class="settings__notification-description">Be aware of the weather</p>
+                </div>
+
+                <div class="settings__notification-switch">
+                    <label class="switch">
+                        <input type="checkbox" class="switch__input">
+                        <span class="switch__slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="settings__notification-card">
+                <div class="settings__notification-text">
+                    <h4 class="settings__notification-heading">Dark mode/Light mode</h4>
+                </div>
+                
+                <div class="settings__notification-switch">
+                    <label class="switch">
+                        <input type="checkbox" id="mode-toggle-mobile" class="switch__input darkmode-toggle">
+                        <span id="mode-toggle" class="switch__slider"></span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="settings__general">
+            <div class="settings__general-card">
+                <div class="settings__general-text">
+                    <h4 class="settings__general-heading">24-Hour Time</h4>
+                </div>
+
+                <div class="settings__general-switch">
+                    <label class="switch">
+                        <input type="checkbox" class="switch__input">
+                        <span class="switch__slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="settings__general-card">
+                <div class="settings__general-text">
+                    <h4 class="settings__general-heading">Location</h4>
+                    <p class="settings__general-description">Get weather of your location</p>
+                </div>
+                
+                <div class="settings__general-switch">
+                    <label class="switch">
+                        <input type="checkbox" class="switch__input">
+                        <span class="switch__slider"></span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="/js/sidebar.js"></script>
+    <script src="/js/settings.js"></script>
+    
+</body>
+</html>

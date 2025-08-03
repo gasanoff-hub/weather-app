@@ -1,0 +1,38 @@
+:root {
+  --text-white: #ffffff;
+  --text-light-gray: #cbd5e1;
+  --text-gray: #94a3b8;
+
+  --text-hover: #0ea5e9;
+
+  --bg-body: #1e293b;
+  --bg-section: #334155;
+  --bg-active: #314b72;
+
+  --bg-button: #0ea5e9;
+  --bg-button-hover: #38bdf8;
+
+  --bg-checkbox-checked: #0ea5e9;
+
+  --icon-sun: #facc15;
+}
+
+
+body.light {
+  --text-white: #000000;
+  --text-light-gray: #475569;
+  --text-gray: #64748b;
+
+  --text-hover: #0284c7;
+
+  --bg-body: #f8fafc;
+  --bg-section: #e2e8f0;
+  --bg-active: #cbd5e1;
+
+  --bg-button: #0284c7;
+  --bg-button-hover: #0ea5e9;
+
+  --bg-checkbox-checked: #0284c7;
+
+  --icon-sun: #facc15;
+}

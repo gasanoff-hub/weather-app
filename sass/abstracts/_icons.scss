@@ -1,0 +1,23 @@
+@use '../base/typography' as b;
+@use "../abstracts/mixins" as a;
+
+.icon {
+  &--air {
+    font-size: 2rem;
+    color: var(--text-gray);
+  }
+
+  @include a.respond(md) {
+    &--air {
+      font-size: 2rem;
+      color: var(--text-gray);
+    }
+  }
+
+  @include a.respond(lg) {
+    &--air {
+      font-size: 1.5rem;
+      color: var(--text-gray);
+    }
+  }
+}

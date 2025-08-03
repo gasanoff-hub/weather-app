@@ -1,0 +1,28 @@
+@use '../base/typography';
+@use '../abstracts/mixins' as a;
+.btn {
+    &--desktop {
+        border-radius: 5rem;
+        padding: 1rem;
+        background: var(--bg-button);
+        color: var(--text-white);
+    }
+
+    &--mobile {
+        border-radius: 5rem;
+        padding: 1rem;
+        background: var(--bg-button);
+        color: var(--text-white);
+        display: none;
+    }
+
+    @include a.respond(md) {
+        &--desktop {
+            display: none;
+        }
+
+        &--mobile {
+            display: block;
+        }
+    }
+}
